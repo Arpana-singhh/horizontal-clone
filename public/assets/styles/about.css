@@ -1,0 +1,142 @@
+.recent-work {
+  background: #36ade3;
+  text-decoration: none;
+  border-radius: 30px;
+  padding: 19px 30px;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+  display: inline-block;
+  padding: 1em 2em;
+  font-size: 1.15rem;
+  line-height: 0.7rem;
+  color: #FFF;
+  font-weight: 500;
+  text-transform: none;
+  transition: color 0.1s linear;
+}
+.recent-work .btn-overlay {
+  background: #232323;
+  content: "";
+  position: absolute;
+  transform: translateX(-100%);
+  inset: 0;
+  z-index: -1;
+  transition: transform 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transform-origin: 100% 50%;
+  border-radius: 50px;
+  visibility: hidden;
+}
+.recent-work:hover .btn-overlay {
+  transform: translateX(0);
+  visibility: visible;
+}
+.recent-work.ant-out .btn-overlay {
+  transform: translateX(100%);
+  visibility: visible;
+}
+
+.rating-block {
+  display: flex;
+  gap: 32px;
+  max-width: 554px;
+  width: 100%;
+  margin: auto;
+}
+.rating-block .rating-link {
+  max-width: calc(33.33% - 8px);
+  flex-basis: calc(33.33% - 8px);
+  text-decoration: none;
+}
+.rating-block .rating-link .rating-card {
+  height: 108px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  padding: 20px 15px;
+  border-radius: 20px;
+  background: #232323;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rating-block .rating-link .rating-card .cards {
+  background: rgba(54, 173, 227, 0.3019607843);
+  position: absolute;
+  height: 100%;
+  width: 12px;
+  border-radius: 50%;
+  filter: blur(24px);
+  -webkit-filter: blur(24px);
+  transition: 0.2s linear;
+}
+.rating-block .rating-link .rating-card .card-fx-1 {
+  left: 0;
+}
+.rating-block .rating-link .rating-card .card-fx-2 {
+  right: 0;
+}
+.rating-block .rating-link .rating-card::after {
+  content: "";
+  filter: blur(24px);
+  -webkit-filter: blur(24px);
+  background: rgba(54, 173, 227, 0.3019607843);
+  position: absolute;
+  height: 22px;
+  width: 124px;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.2s linear;
+}
+.rating-block .rating-link .rating-card::before {
+  content: "";
+  filter: blur(24px);
+  -webkit-filter: blur(24px);
+  background: rgba(54, 173, 227, 0.3019607843);
+  position: absolute;
+  height: 22px;
+  width: 78px;
+  top: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.2s linear;
+}
+.rating-block .rating-link .rating-card .card-cont .card-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.rating-block .rating-link .rating-card .card-cont .card-top .rat-txt {
+  font-size: 24px;
+}
+.rating-block .rating-link .rating-card .card-cont .card-top i {
+  color: #FEBA17;
+  font-size: 20px;
+  margin-top: -5px;
+}
+.rating-block .rating-link .rating-card .card-cont .card-bottom span {
+  font-size: 24px;
+  font-weight: 700;
+}
+.rating-block .rating-link .rating-card:hover .card-fx-1 {
+  left: calc(100% - 12px);
+}
+.rating-block .rating-link .rating-card:hover .card-fx-2 {
+  right: calc(100% - 12px);
+}
+.rating-block .rating-link .rating-card:hover::before {
+  left: 70%;
+}
+.rating-block .rating-link .rating-card:hover::after {
+  left: 20%;
+}
+
+.btnn {
+  display: flex;
+  justify-content: center;
+  margin-block: 40px;
+  align-items: center;
+}/*# sourceMappingURL=about.css.map */

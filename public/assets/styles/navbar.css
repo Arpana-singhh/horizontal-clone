@@ -1,0 +1,144 @@
+.header {
+  background-color: #2f2d2e;
+  padding-block: 28px;
+  font-family: "Modern Era", sans-serif;
+  font-weight: 400;
+}
+.header .nav-wrapper .nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .nav-wrapper .nav-inner .nav-logo {
+  position: relative;
+  z-index: 2;
+}
+.header .nav-wrapper .nav-item {
+  width: 45px;
+}
+.header .nav-wrapper .nav-item .overlay {
+  display: none;
+}
+.header .nav-wrapper .nav-item .overlay .nav-link {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-top: 100px;
+  margin-right: 170px;
+}
+.header .nav-wrapper .nav-item .overlay .nav-link li {
+  list-style: none;
+}
+.header .nav-wrapper .nav-item .overlay .nav-link li .fs-82 {
+  font-size: 82px;
+  line-height: 96px;
+  font-family: "Modern Era", sans-serif;
+  font-weight: 900;
+  color: #2f2d2e;
+}
+.header .nav-wrapper .nav-item .overlay .nav-link li .fs-42 {
+  font-size: 42px;
+  line-height: 60px;
+  font-family: "Modern Era", sans-serif;
+  font-weight: 900;
+  color: #2f2d2e;
+}
+.header .nav-wrapper .nav-item .overlay .nav-link li a {
+  text-decoration: none;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+}
+.header .nav-wrapper .nav-item .overlay .nav-link li a:hover::after {
+  width: 58px;
+  margin-left: 10px;
+}
+.header .nav-wrapper .nav-item .overlay .nav-link li a::after {
+  content: "";
+  background-color: #2f2d2e;
+  width: 0;
+  height: 9px;
+  display: block;
+  transition: all 0.15s ease-in-out;
+}
+.header .nav-wrapper .nav-item .ham-btn {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  display: flex;
+  position: relative;
+  z-index: 2;
+  flex-direction: column;
+  gap: 5px;
+}
+.header .nav-wrapper .nav-item .ham-btn .ham-1 {
+  display: block;
+  height: 6px;
+  background-color: #ffffff;
+  transition: all 0.15s ease-in-out;
+}
+.header .nav-wrapper .nav-item .ham-btn .ham-1.active {
+  display: none;
+}
+.header .nav-wrapper .nav-item .ham-btn .ham-2 {
+  display: block;
+  height: 6px;
+  background-color: #ffffff;
+  margin-bottom: -11px;
+  transition: all 0.15s ease-in-out;
+}
+.header .nav-wrapper .nav-item .ham-btn .ham-2.active {
+  transform: rotate(135deg);
+  background-color: #2f2d2e;
+}
+.header .nav-wrapper .nav-item .ham-btn .ham-3 {
+  display: block;
+  height: 6px;
+  background-color: #ffffff;
+  transition: all 0.15s ease-in-out;
+}
+.header .nav-wrapper .nav-item .ham-btn .ham-3.active {
+  transform: rotate(-135deg);
+  background-color: #2f2d2e;
+}
+.header .nav-wrapper .nav-item .ham-btn .ham-4 {
+  display: block;
+  height: 6px;
+  background-color: #ffffff;
+  transition: all 0.15s ease-in-out;
+}
+.header .nav-wrapper .nav-item .ham-btn .ham-4.active {
+  display: none;
+}
+.header .nav-wrapper .nav-item .ham-btn:hover .ham-1 {
+  background-color: transparent;
+  border-left: 12px solid #fff;
+  border-right: 12px solid #fff;
+}
+.header .nav-wrapper .nav-item .ham-btn:hover .ham-4 {
+  background-color: transparent;
+  border-left: 12px solid #fff;
+  border-right: 12px solid #fff;
+}
+
+body.open .header .nav-wrapper .nav-item .overlay {
+  width: 100%;
+  height: 100vh;
+  --tw-bg-opacity: 1 !important;
+  background-color: rgba(127, 195, 186, var(--tw-bg-opacity)) !important;
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: block;
+  overflow-y: auto;
+  overflow-x: hidden;
+  pointer-events: auto;
+}
+
+.hori-icon {
+  fill: white;
+}
+
+body.open .hori-icon {
+  fill: #2f2d2e;
+}/*# sourceMappingURL=navbar.css.map */

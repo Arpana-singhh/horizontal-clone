@@ -1,0 +1,43 @@
+@import "mixin.scss";
+
+@keyframes slideIn {
+    from {
+        width: 0;
+        opacity:0;
+    }
+    to {
+        width: 100%;
+        opacity:1;
+    }
+}
+
+.insight{
+    background-color:$theme-clr; 
+    padding-block:120px;
+   .insight-inner{position:relative;display: flex; justify-content: space-between;
+      .insight-right{
+        .insight-img{width:822px; height:720px; 
+            &.animate{img{ opacity:1; animation: slideIn 0.9s forwards;}}
+            img{width:100%; height:100%; opacity:0;  transition:all 0.9s ease-in-out;}
+          }
+      }
+      .insight-left{ background-color: #fff; width: 64px; display: flex; justify-content: center;align-items: center;
+        .ins-left-inner{transform: rotate(-90deg); margin: auto;
+        p{color:$theme-clr; font-size:24px; line-height:36px; font-family: "Modern Era", sans-serif!important; font-weight:900;}
+        }
+      }
+
+      .insight-middle{position: absolute; left: 10%; top: 50%; transform: translateY(-50%); z-index: 1;
+        .ins-mid-inner{
+            .sub-ttl{margin-bottom:8px; font-size:24px; line-height:36px; color:#ffffff; font-family:$font-modern-era(900);}
+            .main-ttl{margin-bottom:40px; font-size: 72px; line-height: 72px; color: #fff; font-family:$font-modern-era(900); max-width: 728px;}
+            .cmn-text{margin-bottom:45px; font-size:18px; line-height:27px; color:#ffffff; font-family:$font-modern-era(400); max-width:364px;}
+            .watch-btn{font-size:18px; font-family:$font-modern-era(700); max-width:210px; color:$theme-clr; background-image: linear-gradient(to left, #7fc3ba 50%,#6ba69e 50%); background-size: 300% 150%; background-position: 100% 100% !important;
+                padding: 16px 44px; display: flex; align-items: center; gap: 10px; transition: background .3s ease;
+             &:hover{background-position: 0 100% !important;}
+            }
+        }
+      }
+    }
+}
+

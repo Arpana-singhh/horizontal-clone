@@ -1,0 +1,66 @@
+.service .service-wrapper .service-inner {
+  background-image: url("../images/Faq-bg.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding-block: 100px;
+  padding-inline: 100px;
+}
+.service .service-wrapper .service-inner .service-top .thk-lin {
+  width: 56px;
+  height: 8px;
+  display: block;
+  margin-bottom: 16px;
+  background-color: #ffffff;
+}
+.service .service-wrapper .service-inner .service-top .serv-title {
+  line-height: 58px;
+  font-size: 48px;
+  color: #ffffff;
+  max-width: 780px;
+  font-family: "Modern Era", sans-serif;
+  font-weight: 900;
+}
+.service .service-wrapper .service-inner .service-bottom {
+  margin-top: 32px;
+}
+.service .service-wrapper .service-inner .service-bottom .serv-link .serv-link-inner .serv-link-wrap:first-child {
+  border-top: 1px solid #ffffff;
+}
+.service .service-wrapper .service-inner .service-bottom .serv-link .serv-link-inner .serv-link-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #fff;
+  padding-inline: 16px;
+  padding-block: 13px;
+  transition: all 0.3s ease-in-out;
+}
+.service .service-wrapper .service-inner .service-bottom .serv-link .serv-link-inner .serv-link-wrap .lnk-ttl {
+  font-size: 24px;
+  font-family: "Modern Era", sans-serif;
+  font-weight: 900;
+  line-height: 27px;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+.service .service-wrapper .service-inner .service-bottom .serv-link .serv-link-inner .serv-link-wrap .lnk-arrow-btn {
+  width: 31px;
+  height: 31px;
+  background-color: #7fc3ba;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+.service .service-wrapper .service-inner .service-bottom .serv-link .serv-link-inner .serv-link-wrap:hover {
+  background-color: #7fc3ba;
+}
+.service .service-wrapper .service-inner .service-bottom .serv-link .serv-link-inner .serv-link-wrap:hover .lnk-ttl {
+  color: #000000;
+}
+.service .service-wrapper .service-inner .service-bottom .serv-link .serv-link-inner .serv-link-wrap:hover .lnk-arrow-btn {
+  transform: translateX(10px);
+}/*# sourceMappingURL=service.css.map */

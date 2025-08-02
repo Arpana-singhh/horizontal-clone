@@ -1,0 +1,193 @@
+$theme-clr: #2f2d2e;
+$whiteColor: #fff;
+
+$font-poppin: "Poppins", sans-serif;
+$font-lato: "Lato", sans-serif;
+$font-montserrat: "Montserrat", sans-serif;
+$font-nunito: "Nunito", sans-serif;
+$font-sans: "Open Sans", serif;
+$font-serif: "Source Serif 4", serif;
+$font-andika: "Andika", serif;
+$font-audiowide: "Audiowide", serif;
+
+
+$text-444: #444;
+$text-2c2: #2c2c2c;
+$text-383: #383838;
+
+$trans02: all 0.2s ease;
+$trans03: all 0.3s ease;
+$trans04: all 0.4s ease;
+$trans05: all 0.5s ease;
+
+$themelgBody: #fff;
+$themelgText: #232323;
+$themelgTrans: background .2s ease, background-color .2s ease, color .2s ease;
+
+
+$font-modern-era: 'Modern Era', sans-serif;
+
+@mixin font-modern-era($weight: 400) {
+  font-family: $font-modern-era;
+  font-weight: $weight;
+}
+
+
+@mixin dispflex($displayflex, $justifycontent, $alignitems) {
+    display: $displayflex;
+    justify-content: $justifycontent;
+    align-items: $alignitems;
+}
+
+@mixin navFlex($alignItems) {
+    align-items: $alignItems;
+}
+
+@mixin transition($time) {
+    transition: all $time ease-in-out;
+}
+
+@mixin image-fill {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@mixin upto-1600 {
+    @media (min-width: 1600px) {
+        @content;
+    }
+}
+
+@mixin large-screen {
+    @media (min-width: 1400px) and (max-width: 1600px) {
+        @content;
+    }
+}
+
+@mixin big-desktop {
+    @media (min-width: 1400px) and (max-width: 2500px) {
+        @content;
+    }
+}
+
+@mixin screen-from-1400 {
+    @media (max-width: 1400px) {
+        @content;
+    }
+}
+
+@mixin screen-up-1300 {
+    @media (min-width: 1300px) {
+        @content;
+    }
+}
+
+@mixin screen-from-1300 {
+    @media (max-width: 1300px) {
+        @content;
+    }
+}
+
+@mixin mini-desktop {
+    @media (max-width: 1199px) {
+        @content;
+    }
+}
+
+@mixin mini-desktop_min {
+    @media (min-width: 1199px) {
+        @content;
+    }
+}
+
+@mixin tab_large {
+    @media (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin tab_min {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+
+@mixin tab {
+    @media (max-width: 991px) {
+        @content;
+    }
+}
+
+@mixin phone_min {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin phone {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin phone-max-640 {
+    @media (max-width: 640px) {
+        @content;
+    }
+}
+
+@mixin phone-xs-min {
+    @media (min-width: 575px) {
+        @content;
+    }
+}
+
+@mixin phone-xs {
+    @media (max-width: 575px) {
+        @content;
+    }
+}
+
+@mixin phone_min_xr {
+    @media (min-width: 481px) {
+        @content;
+    }
+}
+
+@mixin phone-xr {
+    @media (max-width: 480px) {
+        @content;
+    }
+}
+
+@mixin phone-6 {
+    @media (max-width: 420px) {
+        @content;
+    }
+}
+
+@mixin phone-5s {
+    @media (max-width: 375px) {
+        @content;
+    }
+}
+
+@mixin fontSize($lineHeght , $fontSize ) {
+    font-size: $fontSize;
+    line-height: calc(#{$lineHeght} + #{$fontSize});
+}
+
+@mixin flex_box($items) {
+    $menu-items: $items;
+    $width: (
+        100/$menu-items) * 1%;
+    max-width: $width;
+    flex: 0 0 $width;
+}
+
+@mixin animation($animation , $animation_name) {
+    $delay: calc(1s + #{$animation}
+    );
+animation: $animation $delay ease-in-out $animation_name;
+}
